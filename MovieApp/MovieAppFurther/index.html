@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Movies</h1>
+
+    <form action="#" id="movie-form">
+        <div class="contianer">
+            <div>
+                <label for="title">Movie Title :</label>
+                <input type="text" name="title" id="title" min="2" placeholder="Movie Title" required>
+            </div>
+            <div>
+                <label for="rating"> Rating :</label>
+                <input type="number" name="rating" id="rating" min="1" max="10" placeholder="Rating" required>
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <br>
+    <div>
+        <div id="divSort" style="display: none;">
+            <label for="optSort">Sort By:</label>
+            <select name="optSort" id="optSort">
+                <option value="0" selected>--Select--</option>
+                <option value="1">Name (ASC)</option>
+                <option value="2">Name (DESC)</option>
+                <option value="3">Rating (ASC)</option>
+                <option value="4">Rating (DESC)</option>
+            </select>
+        </div>
+        <br>
+        <ul id="movieList">
+
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
