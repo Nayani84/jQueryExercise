@@ -1,0 +1,43 @@
+.contianer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+
+li button {
+    border-radius: 50%;
+    border: 1px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.removeBtn {
+    background-color: rgba(236, 45, 45, 0.726);
+    color: black;
+}
+
+li span:first-child {
+    min-width: 100px;
+}
+
+ul {
+    width: 500px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+ul li:nth-child(odd) {
+    background-color: beige;
+}
